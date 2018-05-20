@@ -1,0 +1,3 @@
+# robots.txt fuer http://www.beispiel.de/
+User-agent: BeispielRobot
+Disallow: /temp/   
