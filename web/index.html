@@ -1,67 +1,55 @@
-
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-	    <title>Was bekomme ich in Frankfurt für meine Miete?</title>
-	    <link rel="stylesheet" href="assets/style.css">
-	    <link rel="stylesheet" href="assets/svg.css">
-	
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-55782039-2', 'auto');
-  ga('send', 'pageview');
+<head>
+    <meta charset="utf-8">
+    <title>Was bekomme ich in Frankfurt für meine Miete?</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/svg.css">
+</head>
 
-</script>
-	</head>
+<body>
+    <div id="wrapper">
+        <div id="chart">
+        </div>
 
-	<body>
-		<div id="wrapper">
-			<div id="chart">
-			</div>
+        <div id="title">
+            <h1>Was bekomme ich in Frankfurt für meine Miete?</h1>
+        </div>
 
-			<div id="title">
-				<h1>Was bekomme ich in Frankfurt für meine Miete?</h1>
-			</div>
+        <div id="about">
+            <p>von <a href="http://tilldettmering.com/" target="_blank">Till Dettmering</a> (<a href="https://twitter.com/tdettmering" class="twitter-follow-button" data-show-count="false">Follow</a>)</p>
+            <p>Dieses Diagramm zeigt die Abhängigkeiten von veschiedenen Parametern zum Mietpreis. Die Farben markieren jeweils einen Stadtteil. <strong>Wichtig: Korrelation heißt nicht zwangsläufig Kausation!</strong> Verschiedene Faktoren, die hier nicht
+                sichtbar sind, bestimmen den Mietpreis und damit möglicherweise die Korrelation mit den hier gezeigten Parametern.</p>
+            <p>Die Daten kommen von Wikipedia, dem <a href="http://daten.frankfurt.de/" target="_blank">Datenportal der Stadt Frankfurt</a> und dem <a href="http://www.wohnungsboerse.net/mietspiegel-Frankfurt/3242" target="_blank">Mietspiegel Frankfurt</a>.</p>
+            <p>Based on code by <a href="http://prcweb.co.uk">Peter Cook</a>, developed using <a href="http://d3js.org" target="_blank">D3</a> & <a href="http://underscorejs.org" target="_blank">Underscore</a>.</p>
 
-			<div id="about">
-				<p>von <a href="http://tilldettmering.com/" target="_blank">Till Dettmering</a> (<a href="https://twitter.com/tdettmering" class="twitter-follow-button" data-show-count="false">Follow</a>)</p>
-				<p>Dieses Diagramm zeigt die Abhängigkeiten von veschiedenen Parametern zum Mietpreis. Die Farben markieren jeweils einen Stadtteil. <strong>Wichtig: Korrelation heißt nicht zwangsläufig Kausation!</strong> Verschiedene Faktoren, die hier nicht sichtbar sind, bestimmen den Mietpreis und damit möglicherweise die Korrelation mit den hier gezeigten Parametern.</p>
-				<p>Die Daten kommen von Wikipedia, dem <a href="http://daten.frankfurt.de/" target="_blank">Datenportal der Stadt Frankfurt</a> und dem <a href="http://www.wohnungsboerse.net/mietspiegel-Frankfurt/3242" target="_blank">Mietspiegel Frankfurt</a>.</p>
-				<p>Based on code by <a href="http://prcweb.co.uk">Peter Cook</a>, developed using <a href="http://d3js.org" target="_blank">D3</a> & <a href="http://underscorejs.org" target="_blank">Underscore</a>.</p>
-				
-				<p><a href="impressum.html">Impressum</a></p>
-			</div>
+            <p><a href="impressum.html">Impressum</a></p>
+        </div>
 
-			<div id="menu">
-<!-- 				<h2>&uarr; Y axis</h2>
-				<ul id="y-axis-menu"></ul>
-				<h2>&rarr; X axis</h2>
- -->				<ul id="x-axis-menu"></ul>
-			</div>
-			
-			<div id="questions">
-				<h1>Offene Fragen</h1>
-			
-				<ol>
-					<li><strong>Gibt es aktuellere Daten?</strong></li>
-					<li>Welche Faktoren haben allgemein Einfluss auf den Mietpreis?</li>
-					<li>Welche der gezeigten Parameter fließen tatsächlich in den Mietpreis ein?</li>
-					<li>Gibt der Mietpreis einen Hinweis auf den sozialen Status der Einwohner?</li>
-					<li>Wie ist die Nähe zum Stadtzentrum als Einflussgröße auf den Mietpreis zu bewerten? (Henne-Ei-Problem)</li>
-					<li>Finden sich hier Scheinkorrelationen?</li>
-					<li>Wie normalisiert man die Anzahl der Kitaplätze?</li>
-				</ol>
-			</div>
-		</div>
+        <div id="menu">
+            <ul id="x-axis-menu"></ul>
+        </div>
 
-		<script src="assets/d3.v3.min.js"></script>
-		<script src="assets/underscore-min.js"></script>
-		<script src="assets/main.js"></script>
-	</body>
+        <div id="questions">
+            <h1>Offene Fragen</h1>
+
+            <ol>
+                <li><strong>Gibt es aktuellere Daten?</strong></li>
+                <li>Welche Faktoren haben allgemein Einfluss auf den Mietpreis?</li>
+                <li>Welche der gezeigten Parameter fließen tatsächlich in den Mietpreis ein?</li>
+                <li>Gibt der Mietpreis einen Hinweis auf den sozialen Status der Einwohner?</li>
+                <li>Wie ist die Nähe zum Stadtzentrum als Einflussgröße auf den Mietpreis zu bewerten? (Henne-Ei-Problem)</li>
+                <li>Finden sich hier Scheinkorrelationen?</li>
+                <li>Wie normalisiert man die Anzahl der Kitaplätze?</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="assets/d3.v3.min.js"></script>
+    <script src="assets/underscore-min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
 </html>
