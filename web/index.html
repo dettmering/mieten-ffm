@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <html lang="en">
 
 <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Was bekomme ich in Frankfurt für meine Miete?</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/skeleton.css">
+
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/svg.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="chart">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" id="title">
+                <h1>Was bekomme ich in Frankfurt für meine Miete?</h1>
+            </div>
         </div>
-
-        <div id="title">
-            <h1>Was bekomme ich in Frankfurt für meine Miete?</h1>
+        <div class="row">
+            <div class="two columns" id="menu">
+                <ul id="x-axis-menu"></ul>
+            </div>
+            <div class="ten columns" id="chart">
+            </div>
         </div>
+        <div class="row">
+            <div class="six columns" id="about">
+                <h1>Über</h1>
 
-        <div id="about">
-            <p>von <a href="http://tilldettmering.com/" target="_blank">Till Dettmering</a> (<a href="https://twitter.com/tdettmering" class="twitter-follow-button" data-show-count="false">Follow</a>)</p>
-            <p>Dieses Diagramm zeigt die Abhängigkeiten von veschiedenen Parametern zum Mietpreis. Die Farben markieren jeweils einen Stadtteil. <strong>Wichtig: Korrelation heißt nicht zwangsläufig Kausation!</strong> Verschiedene Faktoren, die hier nicht
-                sichtbar sind, bestimmen den Mietpreis und damit möglicherweise die Korrelation mit den hier gezeigten Parametern.</p>
-            <p>Die Daten kommen von Wikipedia, dem <a href="http://daten.frankfurt.de/" target="_blank">Datenportal der Stadt Frankfurt</a> und dem <a href="http://www.wohnungsboerse.net/mietspiegel-Frankfurt/3242" target="_blank">Mietspiegel Frankfurt</a>.</p>
-            <p>Based on code by <a href="http://prcweb.co.uk">Peter Cook</a>, developed using <a href="http://d3js.org" target="_blank">D3</a> & <a href="http://underscorejs.org" target="_blank">Underscore</a>.</p>
+                <p>Zusammengestellt von <a href="http://tilldettmering.com/" target="_blank">Till Dettmering</a> (<a href="https://twitter.com/tdettmering" class="twitter-follow-button" data-show-count="false">Follow</a>)</p>
+                <p>Dieses Diagramm zeigt die Abhängigkeiten von veschiedenen Parametern zum Mietpreis. Die Farben markieren jeweils einen Stadtteil. <strong>Wichtig: Korrelation heißt nicht zwangsläufig Kausation!</strong> Verschiedene Faktoren, die hier
+                    nicht sichtbar sind, bestimmen den Mietpreis und damit möglicherweise die Korrelation mit den hier gezeigten Parametern.</p>
+                <p>Die Daten kommen von Wikipedia, dem <a href="http://daten.frankfurt.de/" target="_blank">Datenportal der Stadt Frankfurt</a> und dem <a href="http://www.wohnungsboerse.net/mietspiegel-Frankfurt/3242" target="_blank">Mietspiegel Frankfurt</a>.</p>
+                <p>Based on code by <a href="http://prcweb.co.uk">Peter Cook</a>, developed using <a href="http://d3js.org" target="_blank">D3</a> & <a href="http://underscorejs.org" target="_blank">Underscore</a>.</p>
 
-            <p><a href="https://tilldettmering.com/impressum">Impressum</a></p>
-        </div>
+                <p><a href="https://tilldettmering.com/impressum">Impressum</a></p>
+            </div>
 
-        <div id="menu">
-            <ul id="x-axis-menu"></ul>
-        </div>
+            <div class="six columns">
+                <h1>Offene Fragen</h1>
 
-        <div id="questions">
-            <h1>Offene Fragen</h1>
-
-            <ol>
-                <li><strong>Gibt es aktuellere Daten?</strong></li>
-                <li>Welche Faktoren haben allgemein Einfluss auf den Mietpreis?</li>
-                <li>Welche der gezeigten Parameter fließen tatsächlich in den Mietpreis ein?</li>
-                <li>Gibt der Mietpreis einen Hinweis auf den sozialen Status der Einwohner?</li>
-                <li>Wie ist die Nähe zum Stadtzentrum als Einflussgröße auf den Mietpreis zu bewerten? (Henne-Ei-Problem)</li>
-                <li>Finden sich hier Scheinkorrelationen?</li>
-                <li>Wie normalisiert man die Anzahl der Kitaplätze?</li>
-            </ol>
+                <ol>
+                    <li><strong>Gibt es aktuellere Daten?</strong></li>
+                    <li>Welche Faktoren haben allgemein Einfluss auf den Mietpreis?</li>
+                    <li>Welche der gezeigten Parameter fließen tatsächlich in den Mietpreis ein?</li>
+                    <li>Gibt der Mietpreis einen Hinweis auf den sozialen Status der Einwohner?</li>
+                    <li>Wie ist die Nähe zum Stadtzentrum als Einflussgröße auf den Mietpreis zu bewerten? (Henne-Ei-Problem)</li>
+                    <li>Finden sich hier Scheinkorrelationen?</li>
+                    <li>Wie normalisiert man die Anzahl der Kitaplätze?</li>
+                </ol>
+            </div>
         </div>
     </div>
 

@@ -56,7 +56,7 @@ function getCorrelation(xArray, yArray) {
   var ntor = ( ( sumXY ) - ( sumX * sumY / n) );
   var dtorX = sumX2 - ( sumX * sumX / n);
   var dtorY = sumY2 - ( sumY * sumY / n);
- 
+
   var r = ntor / (Math.sqrt( dtorX * dtorY )); // Pearson ( http://www.stat.wmich.edu/s216/book/node122.html )
   var m = ntor / dtorX; // y = mx + b
   var b = ( sumY - m * sumX ) / n;
@@ -258,7 +258,7 @@ d3.csv('assets/summary.csv', function(data) {
 
     yScale = d3.scale.linear()
                     .domain([bounds[yAxis].min, bounds[yAxis].max])
-                    .range([600, 100]);    
+                    .range([600, 100]);
   }
 
   function makeXAxis(s) {
@@ -287,5 +287,3 @@ d3.csv('assets/summary.csv', function(data) {
   }
 
 })
-
-
