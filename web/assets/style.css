@@ -1,8 +1,7 @@
 /* Document styling */
 body {
   background-color: #fff;
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
 }
 
 #wrapper {
@@ -24,24 +23,24 @@ body {
   top: 0;
   left: 30px;
   font-size: 16px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   line-height: 100%;
 }
 
 #questions {
   position: absolute;
-  top: 730px;
-  left: 30px;
+  top: 680px;
+  left: 280px;
   font-size: 16px;
   line-height: 100%;
 }
 
 #about {
   position: absolute;
-  top: 350px;
+  top: 400px;
   left: 30px;
   width: 200px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #about .social {
@@ -55,10 +54,6 @@ body {
   width: 300px;
 }
 
-li, h1, h2 {
-  font-weight: 100;
-}
-
 h2 {
   font-size: 11px;
   margin: 0;
@@ -67,7 +62,7 @@ h2 {
 
 ul {
   list-style: none;
-  font-size: 12px;
+  font-size: 15px;
   padding: 0;
   margin-top: 3px;
 }
@@ -88,5 +83,3 @@ li.preview {
 li.selected {
   font-weight: bold;
 }
-
-..twitter-share-button {width: 82px !important;}
